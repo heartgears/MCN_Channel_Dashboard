@@ -15,6 +15,9 @@ For this project, I converted an internal list of Sony Music's MCN partner chann
 ## 1. Dataset
 The initial channel list consisted of data pulled from Tubular reporting and direct reports from MCN partner channels. The list of columns and their datatype can be seen below.
 
+![Channel_List_Redacted.jpg](https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/Channel_List_Redacted.jpg)
+![Channel_List_Redacted.jpg](https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/Columns_List.png)
+
 Some columns – in particular genres, moods, languages, and top markets - included multiple values in each cell, separated by commas. These multiple-value cells and columns made filtering data tedious and non-intuitive. The dashboard aims to solve this particular problem, as well as the overwhelming number of channels and rows in a spreadsheet format into something cleaner and more interactive for label teams to use for guiding their MCN strategy.
 
 ## 2. Data Preparation and Manipulation
