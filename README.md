@@ -23,11 +23,19 @@ Some columns – in particular genres, moods, languages, and top markets - inclu
 ## 2. Data Preparation and Manipulation
 The channel list was directly imported into a Google co-lab Python notebook via Google Sheets. The four aforementioned columns above (Genres, Moods, Languages and Top Markets) were used to create four separate data frames. In Google Sheets, a separate sheet was used to split these columns on commas, resulting in a sheet like the below:
 
+![Channel_List_Split.jpg.jpg](https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/Channel_List_Split.jpg)
+
 These sheets were then converted into separate data frames and melted using pd.melt, resulting in each Channel ID receiving at least one row of data. For example, if a channel had multiple genres listed, it would receive a row in the data frame for each genre. 
+
+![Genre_df_Redacted.jpg](https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/Genre_df_Redacted.jpg)
 
 A separate data frame was created for the rest of the channel list data, minus the aforementioned columns above. This data frame was then merged one at a time with each of these other data frames with a left join. The final step of data preperation was to apply a mask for the numeric data columns (YouTube Views, Subscribers, etc), so that the dashboard could sum the results for a channel and return the correct subscriber count. I.e., if this step was not performed, a channel could have three genres and 100 subscribers and the dashboard would return the subscribers as a metric sum of 300. Additionally, with this step taken, if multiple channels are selected, the sum function returns the correct result.
 
+![Masked_df.jpg](https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/Masked_df.jpg)
+
 ## 3. Dashboard
 The final data frame was then re-uploaded to the same Google Sheet for Google's Looker Data studio to create a dashboard. The final dashboard can be seen below.
+
+![MCN_Dashboard_Redacted.jpg](https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/MCN_Dashboard_Redacted.jpg)
 
 Due to the confidentiality of the data, the final dashboard is not linked here. 
