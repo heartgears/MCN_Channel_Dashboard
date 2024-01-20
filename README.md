@@ -4,7 +4,7 @@ Analyze a number of MCN partner channels in one dashboard.
 ## Background
 MCNs or multi-channel networks are groups of YouTube channels that partner with music rightsholders to upload and promote music. Popular MCNs include the District (and it's SONY Music joint venture FYEO), COLORS, and NATIONS, which have all partnered with the major US record labels (Sony Music, Universal Music, and Warner Music). These networks can range from several to hundreds of partner channels, with these partner channels contributing millions of subscribers and billions of streams to their respective MCNs and rightsholders.
 
-For this project, I converted an internal list of Sony Music's MCN partner channels into a dashboard to better interact with and understand the value and impact of our MCN support.
+For this project, I converted an internal list of Sony Music's MCN partner channels into a dashboard to better interact with and understand our MCN networks.
 
 ## Requirements and Technology
 * Python & Pandas
