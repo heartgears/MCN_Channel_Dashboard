@@ -15,15 +15,15 @@ For this project, I converted an internal list of Sony Music's MCN partner chann
 ## 1. Dataset
 The initial channel list consisted of data pulled from Tubular reporting and direct reports from MCN partner channels. The list of columns and their datatype can be seen below.
 
-![Channel_List_Redacted.jpg](https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/Channel_List_Redacted.jpg)
-![Channel_List_Redacted.jpg](https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/Columns_List.png)
+<img src="https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/Channel_List_Redacted.jpg" width=75% height=75%>
+<img src="https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/Columns_List.png" width=75% height=75%>
 
 Some columns – in particular genres, moods, languages, and top markets - included multiple values in each cell, separated by commas. These multiple-value cells and columns made filtering data tedious and non-intuitive. The dashboard aims to solve this particular problem, as well as the overwhelming number of channels and rows in a spreadsheet format into something cleaner and more interactive for label teams to use for guiding their MCN strategy.
 
 ## 2. Data Preparation and Manipulation
 The channel list was directly imported into a Google co-lab Python notebook via Google Sheets. The four aforementioned columns above (Genres, Moods, Languages and Top Markets) were manipulated into four separate data frames by splitting. This data was then converted into separate data frames using pd.melt, resulting in each Channel ID receiving at least one row of data. For example, a channel with multiple genres listed would receive a row in the data frame for each genre. 
 
-![Genre_df_Redacted.jpg](https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/Genre_df_Redacted.jpg)
+<img src="https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/Genre_df_Redacted.jpg" width=75% height=75%>
 
 A separate data frame was created for the rest of the channel list data, minus the abovementioned columns. This data frame was then merged with these other data frames on a left join to create a new dataset for the best dashboard viewing.
 
@@ -32,7 +32,7 @@ The final data frame was then re-uploaded to the same Google Sheet for Google's 
 
 ### 3a. MCN Partner View
 
-<img src="https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/3a_MCN_Overview.jpg" width=50% height=50%>
+![3a_MCN_Overview.jpg](https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/3a_MCN_Overview.jpg)
 
 The first page of the dashboard is primarily for identifying target channels within certain genre, language, and mood spaces. A user can, for example, filter for Spanish-language Pop channels with over 100,000 subscribers. The data returned will show all channels meeting this criteria and sort them by the channels with the most Sony content uploads. This allows teams to fine-tune their MCN outreach strategies and better understand the level of support they could expect to receive on certain musical products.
 
