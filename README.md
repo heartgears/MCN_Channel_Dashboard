@@ -16,14 +16,14 @@ For this project, I converted an internal list of Sony Music's MCN partner chann
 The initial channel list consisted of data pulled from Tubular reporting and direct reports from MCN partner channels. The list of columns and their datatype can be seen below.
 
 <img src="https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/Channel_List_Redacted.jpg" width=75% height=75%>
-<img src="https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/Columns_List.png" width=75% height=75%>
+<img src="https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/Columns_List.png" width=55% height=55%>
 
 Some columns – in particular genres, moods, languages, and top markets - included multiple values in each cell, separated by commas. These multiple-value cells and columns made filtering data tedious and non-intuitive. The dashboard aims to solve this particular problem, as well as the overwhelming number of channels and rows in a spreadsheet format into something cleaner and more interactive for label teams to use for guiding their MCN strategy.
 
 ## 2. Data Preparation and Manipulation
 The channel list was directly imported into a Google co-lab Python notebook via Google Sheets. The four aforementioned columns above (Genres, Moods, Languages and Top Markets) were manipulated into four separate data frames by splitting. This data was then converted into separate data frames using pd.melt, resulting in each Channel ID receiving at least one row of data. For example, a channel with multiple genres listed would receive a row in the data frame for each genre. 
 
-<img src="https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/Genre_df_Redacted.jpg" width=75% height=75%>
+<img src="https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/Genre_df_Redacted.jpg" width=60% height=60%>
 
 A separate data frame was created for the rest of the channel list data, minus the abovementioned columns. This data frame was then merged with these other data frames on a left join to create a new dataset for the best dashboard viewing.
 
