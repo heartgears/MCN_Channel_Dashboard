@@ -32,15 +32,19 @@ The final data frame was then re-uploaded to the same Google Sheet for Google's 
 
 ### 3a. MCN Partner View
 
-![MCN_Dashboard_Redacted.jpg](https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/MCN_Dashboard_Redacted.jpg)
+<img src="https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/3a_MCN_Overview.jpg" width=50% height=50%>
 
 The first page of the dashboard is primarily for identifying target channels within certain genre, language, and mood spaces. A user can, for example, filter for Spanish-language Pop channels with over 100,000 subscribers. The data returned will show all channels meeting this criteria and sort them by the channels with the most Sony content uploads. This allows teams to fine-tune their MCN outreach strategies and better understand the level of support they could expect to receive on certain musical products.
 
 ### 3b. Channel Drilldowns
 
+![3b_Channel_Drilldown.jpg](https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/3b_Channel_Drilldown.jpg)
+
 The second page of the dashboard provides insight into certain channels' data. Users can see the size of a channel, how frequently it uploads, and Sony's market share by number of uploads. They can additionally filter by similar criteria found on page one.
 
 ### 3c. Interaction Tracker
+
+![3c_Interactions.jpg](https://github.com/heartgears/MCN_Channel_Dashboard/blob/main/3c_Interactions.jpg)
 
 The third and final page explores the interaction tracker data provided by District & FYEO. In addition to seeing the raw interaction tracker data, users can filter for their label or territory's content only, in addition to artist and song performance data. The charts on the right show trends in their support broken out by tier of artist, as well as seeing the Top 10 songs and channel supporters of particular content.
 
